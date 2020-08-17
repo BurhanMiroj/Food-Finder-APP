@@ -21,7 +21,7 @@ const loadFood = () => {
 let foodHTML = "";
 const renderFood = (foods) => {
   foodHTML = "";
-  foods.map((food) => {
+  foods.forEach((food) => {
     foodHTML += `
     <!-- Column -->
         <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
@@ -62,6 +62,9 @@ const renderFood = (foods) => {
         `;
   });
   foodContainer.innerHTML = foodHTML;
+
+  const foodLength = foodHTML.length;
+  console.log(foodLength);
 };
 
 search.addEventListener("keyup", (e) => {
