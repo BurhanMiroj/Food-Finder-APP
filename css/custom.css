@@ -1,0 +1,17 @@
+.header-food {
+    animation: rotate 10s linear infinite;
+}
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}

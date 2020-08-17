@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Finder</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="#">
+        <?xml version="1.0"?>
+        <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.421 513.421"
+          style="enable-background:new 0 0 513.421 513.421;" xml:space="preserve" width="512px" height="512px">
+          <g>
+            <circle style="fill:#CDD6E0;" cx="256.71" cy="256.137" r="256" data-original="#CDD6E0" />
+            <circle style="fill:#ACB3BA;" cx="256.71" cy="256.137" r="184.533" data-original="#ACB3BA" />
+            <path style="fill:#F2F2F2;"
+              d="M264.177,0.137c-5.333,0-8.533,5.333-8.533,9.6v97.067c0,5.333-4.267,9.6-9.6,9.6  c-5.333,0-9.6-4.267-9.6-9.6V9.737c0-5.333-3.2-9.6-8.533-9.6c-5.333-1.067-10.667,4.267-10.667,9.6v97.067  c0,5.333-4.267,9.6-9.6,9.6l0,0c-5.333,0-9.6-4.267-9.6-9.6V9.737c0-5.333-3.2-9.6-8.533-9.6c-5.333-1.067-10.667,4.267-10.667,9.6  v97.067c0,5.333-4.267,9.6-9.6,9.6l0,0c-5.333,0-9.6-4.267-9.6-9.6V9.737c0-5.333-3.2-9.6-8.533-9.6  c-5.333-1.067-10.667,4.267-10.667,9.6v107.733c0,18.133,7.467,34.133,19.2,46.933c19.2,19.2,29.867,45.867,27.733,72.533  l-21.333,230.4c0,2.133,0,5.333,0,7.467c2.133,23.467,24.533,40.533,48,36.267c21.333-4.267,35.2-24.533,33.067-45.867  l-20.267-229.333c-2.133-27.733,8.533-53.333,27.733-72.533c11.733-11.733,19.2-28.8,19.2-46.933V9.737  C273.777,4.404,269.51,0.137,264.177,0.137z"
+              data-original="#F2F2F2" />
+            <path style="fill:#40596B;"
+              d="M227.91,240.137h-40.533l-20.267,227.2c0,2.133,0,5.333,0,7.467  c2.133,23.467,24.533,40.533,48,36.267c21.333-4.267,35.2-24.533,33.067-45.867L227.91,240.137z"
+              data-original="#40596B" />
+            <path style="fill:#F2F2F2;"
+              d="M355.91,0.137c0,0-45.867,18.133-65.067,155.733c-7.467,56.533,4.267,112,25.6,164.267  c2.133,5.333,3.2,11.733,3.2,18.133l-12.8,137.6c0,2.133,0,4.267,0,6.4c2.133,18.133,18.133,32,37.333,29.867  c17.067-2.133,28.8-20.267,27.733-37.333L355.91,0.137z"
+              data-original="#F2F2F2" />
+            <path style="fill:#FFCE00"
+              d="M319.644,337.204c0,1.067,0,1.067,0,2.133l-12.8,137.6c0,2.133,0,4.267,0,6.4  c2.133,18.133,18.133,32,37.333,29.867c17.067-2.133,28.8-20.267,27.733-37.333l-4.267-137.6h-48V337.204z"
+              data-original="#FF7058" class="active-path" data-old_color="#FF7058" />
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <label for="menu-toggle" class="pointer-cursor lg:hidden block">
+      <svg class="menu-hamburger" xmlns="http://www.w3.org/2000/svg" width="33" height="27.505" viewBox="0 0 33 27.505">
+        <g id="Group_28" data-name="Group 28" transform="translate(-2592 -506)">
+          <line id="Line_4" data-name="Line 4" x2="22" transform="translate(2600.5 508.5)" fill="none" stroke="#707070"
+            stroke-linecap="round" stroke-width="5" />
+          <line id="Line_4-2" data-name="Line 4" x2="7" transform="translate(2615.5 519.753)" fill="none"
+            stroke="#707070" stroke-linecap="round" stroke-width="5" />
+          <line id="Line_4-3" data-name="Line 4" x2="28" transform="translate(2594.5 531.005)" fill="none"
+            stroke="#707070" stroke-linecap="round" stroke-width="5" />
+        </g>
+      </svg>
+
+    </label>
+
+    <div class="list-menu hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav class="">
+        <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+          <li><a class="lg:p-4 py-3 px-0 block"
+              href="#">Features</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block"
+              href="#">Pricing</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block"
+              href="#">Documentation</a></li>
+          <li><a class="lg:px-6 mx-3 text-white py-2 px-0 lg:mb-0 mb-2 bg-red-500 rounded-full"
+              href="pages/login.html">Login</a></li>
+          <li><a class="lg:px-6 mx-3 text-white py-2 px-0 lg:mb-0 mb-2 bg-yellow-500 rounded-full"
+              href="pages/sign-up.html">Sign Up</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+        <div class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400"></div>
+      </a>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <div class="hero bg-gray-100 py-10">
+    <!-- container -->
+    <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+      <!-- hero wrapper -->
+      <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+        <!-- hero text -->
+        <div class="hero-text col-span-6">
+          <h1 class=" font-bold text-4xl md:text-5xl max-w-xl text-gray-900 leading-tight">Don't listen to
+            what they say, Go See</h1>
+          <hr class=" w-12 h-1 bg-orange-500 rounded-full mt-8">
+          <div class="py-4">
+            <div class="py-8">
+              <div class="bg-white flex border items-center rounded-full shadow-l hover:shadow-xl">
+                <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+                  id="search" type="text" placeholder="Search Food Here">
+                <div class="p-4">
+                  <!-- <button id="search" class="bg-blue-500 text-white rounded-full p-3 hover:shadow-xl hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28.163" height="28.155" viewBox="0 0 28.163 28.155">
+                      <path id="search"
+                        d="M25.16,14.4a10.775,10.775,0,1,0,7.613,3.147A10.733,10.733,0,0,0,25.16,14.4Zm-.014,1.673a8.946,8.946,0,0,1,6.408,2.665,9.113,9.113,0,0,1,.028,12.845,9.284,9.284,0,0,1-4.6,2.475,8.95,8.95,0,0,1-8.244-2.475,9.087,9.087,0,0,1,6.408-15.509Zm0,1.7a7.206,7.206,0,0,0-5.189,2.183A7.365,7.365,0,0,0,17.8,24.891a.835.835,0,0,0,.822.879h.028a.867.867,0,0,0,.851-.822,5.752,5.752,0,0,1,1.644-3.8,5.624,5.624,0,0,1,4-1.672.851.851,0,1,0,0-1.7ZM20.241,28.464a.851.851,0,1,0,.851.851A.851.851,0,0,0,20.241,28.464Zm13.713,4.678a.788.788,0,0,0-.585.255.822.822,0,0,0,0,1.191l.709.709a2.439,2.439,0,0,0-.255,1.106,2.551,2.551,0,0,0,.737,1.815l3.63,3.572A2.557,2.557,0,0,0,40,42.556a2.651,2.651,0,0,0,1.815-.737,2.55,2.55,0,0,0,0-3.6l-3.629-3.63a2.551,2.551,0,0,0-1.815-.737,2.439,2.439,0,0,0-1.106.255L34.56,33.4A.857.857,0,0,0,33.954,33.142Zm2.421,2.382a.772.772,0,0,1,.6.255l3.6,3.6a.842.842,0,0,1-1.191,1.191L35.779,37a.879.879,0,0,1-.255-.624.772.772,0,0,1,.255-.6A.816.816,0,0,1,36.374,35.524Z"
+                        transform="translate(-14.4 -14.4)" fill="#fff" />
+                    </svg>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- hero image -->
+        <div class="hero-image col-span-6">
+          <img src="./img/header-food.png" class="w-4/5 mx-auto header-food" alt="Header Food">
+        </div>
+      </div>
+    </div>
+  </div><!-- end hero -->
+
+  <!-- container food -->
+  <p class="text-6xl text-center">Food</p>
+  <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex container-food flex-wrap mx-1 lg:mx-6">
+
+    </div>
+</div>
+
+    <script src="js/api.js"></script>
+</body>
+</body>
+
+</html>
