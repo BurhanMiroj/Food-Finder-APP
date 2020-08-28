@@ -56,3 +56,14 @@ const renderFood = (foods) => {
   foodContainer.innerHTML = foodHTML;
 };
 document.addEventListener("DOMContentLoaded", loadFood);
+
+search.addEventListener('keyup', function(e) {
+  let searchFor = e.target.value;
+  let filteredFood;
+
+  filteredFood = foodArr.filter(food => {
+    return food.strMeal.toLowerCase().includes(searchFor)
+  })
+
+  renderFood(filteredFood);
+})
