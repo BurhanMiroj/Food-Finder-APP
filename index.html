@@ -38,38 +38,32 @@
       </a>
     </div>
 
-    <label for="menu-toggle" class="pointer-cursor lg:hidden block">
-      <svg class="menu-hamburger" xmlns="http://www.w3.org/2000/svg" width="33" height="27.505" viewBox="0 0 33 27.505">
-        <g id="Group_28" data-name="Group 28" transform="translate(-2592 -506)">
-          <line id="Line_4" data-name="Line 4" x2="22" transform="translate(2600.5 508.5)" fill="none" stroke="#707070"
-            stroke-linecap="round" stroke-width="5" />
-          <line id="Line_4-2" data-name="Line 4" x2="7" transform="translate(2615.5 519.753)" fill="none"
-            stroke="#707070" stroke-linecap="round" stroke-width="5" />
-          <line id="Line_4-3" data-name="Line 4" x2="28" transform="translate(2594.5 531.005)" fill="none"
-            stroke="#707070" stroke-linecap="round" stroke-width="5" />
-        </g>
-      </svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27.505" viewBox="0 0 33 27.505">
+      <g id="Group_28" data-name="Group 28" transform="translate(-2592 -506)">
+        <line id="Line_4" data-name="Line 4" x2="22" transform="translate(2600.5 508.5)" fill="none" stroke="#707070"
+          stroke-linecap="round" stroke-width="5" />
+        <line id="Line_4-2" data-name="Line 4" x2="7" transform="translate(2615.5 519.753)" fill="none" stroke="#707070"
+          stroke-linecap="round" stroke-width="5" />
+        <line id="Line_4-3" data-name="Line 4" x2="28" transform="translate(2594.5 531.005)" fill="none"
+          stroke="#707070" stroke-linecap="round" stroke-width="5" />
+      </g>
+    </svg> -->
 
-    </label>
-
+    <div class="menu-hamburger lg:hidden">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="list-menu hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-      <nav class="menuList">
+      <nav>
         <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-          <li><a class="lg:p-4 py-3 px-0 block"
-              href="#">Home</a></li>
-          <li><a class="lg:p-4 py-3 px-0 block"
-              href="#">About</a></li>
-          <li><a class="lg:p-4 py-3 px-0 block"
-              href="#">Blog</a></li>
-          <li><a class="lg:px-6 mx-3 text-white py-2 px-0 lg:mb-0 mb-2 bg-red-500 rounded-full"
-              href="pages/login.html">Login</a></li>
-          <li><a class="lg:px-6 mx-3 text-white py-2 px-0 lg:mb-0 mb-2 bg-yellow-500 rounded-full"
-              href="pages/sign-up.html">Sign Up</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block" href="#">Home</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block" href="#">About</a></li>
+          <li><a class="lg:p-4 py-3 px-0 block" href="#">Blog</a></li>
+          <ul class="flex items-center text-base text-gray-700 pt-4 lg:pt-0">
+            <li><a class="text-white flex justify-center items-center rounded-full flex w-24 h-10 bg-red-500" href="pages/login.html">Login</a></li>
+            <li><a class="text-white flex justify-center items-center ml-8 rounded-full flex w-24 h-10 bg-yellow-500" href="pages/sign-up.html">Sign Up</a></li>
+          </ul>
         </ul>
       </nav>
-      <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
-        <div class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400"></div>
-      </a>
     </div>
   </header>
 
@@ -82,8 +76,9 @@
 
         <!-- hero text -->
         <div class="hero-text col-span-6">
-          <h1 class=" font-bold text-4xl md:text-5xl max-w-xl text-gray-900 leading-tight">We help you to find the best food</h1>
-          <hr class=" w-12 h-1 bg-orange-500 rounded-full mt-8">
+          <h1 class=" font-bold text-4xl m-4 md:text-5xl max-w-xl text-gray-900 leading-tight">We help you to find the best
+            food</h1>
+          <hr class=" w-12 m-4 h-1 bg-orange-500 rounded-full mt-8">
           <div class="py-4">
             <div class="py-8">
               <div class="bg-white flex border items-center rounded-full shadow-l hover:shadow-xl">
@@ -116,11 +111,14 @@
   <p class="text-6xl text-center">Food</p>
   <div class="container my-12 mx-auto px-4 md:px-12">
     <div class="flex container-food flex-wrap mx-1 lg:mx-6">
-
+        
     </div>
-</div>
+  </div>
 
-    <script src="js/api.js"></script>
+
+  <div class="food"></div>
+
+  <script src="js/app.js" type="module"></script>
 </body>
 </body>
 
